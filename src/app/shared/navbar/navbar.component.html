@@ -1,0 +1,55 @@
+<!-- Navbar -->
+<nav class="relative sm:w-[480px] md:w-[768px] lg:w-[976px] xl:w-[1440px] mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+            <img class="mb-3" src="./../../../assets/icons8-attach-gif-60.png" alt="" />
+        </div>
+        <div class="flex gap-4">
+            <!-- Menu Items -->
+            <div class="hidden space-x-6  md:flex">
+                <!-- <a href="gifs/home" class="hover:text-green-500">Home</a> -->
+                <!-- <a href="gifs/explore" routerLinkActive="router-link-active"  class="hover:text-green-500">Explore</a>
+                <a href="gifs/liked" class="hover:text-green-500">Liked</a> -->
+                <a routerLink="./" class="hover:text-green-500">Home</a>
+                <a routerLink="./explore" routerLinkActive="router-link-active" class="hover:text-green-500">Explore</a>
+                <a routerLink="./liked" class="hover:text-green-500">Liked</a>
+            </div>
+            <!-- Buttons -->
+            <div class="flex gap-2">
+                <a href="#" class="hidden px-2 rounded-xl text-white bg-green-500 hover:bg-green-400 md:block">
+                    LogIn
+                </a>
+                <a href="#" class="hidden px-2 rounded-xl text-white bg-green-500 hover:bg-green-400 md:block">
+                    Register
+                </a>
+            </div>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="block md:hidden ">
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="" src="./../../../assets/menu.png" class="w-[20px]">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button class="dropdown-item" type="button">
+                        <a href="#" class="hover:text-green-500">Home</a>
+                    </button>
+                </li>
+                  <li><button class="dropdown-item" type="button">
+                    <a href="#" class="hover:text-green-500">Explore</a>
+                </button>
+                </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                        <a href="#" class="hover:text-green-500">Saved</a>
+                    </button>
+                </li>
+                </ul>
+              </div>
+        </div>
+
+    </div>
+</nav>
